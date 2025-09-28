@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Late Entry Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    form { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2); width: 100%; max-width: 400px; }
+    h1 { text-align: center; margin-bottom: 20px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+    button { margin-top: 15px; padding: 10px; width: 100%; border: none; border-radius: 5px; background: green; color: white; font-size: 16px; cursor: pointer; }
+    button:hover { background: darkgreen; }
+  </style>
+</head>
+<body>
+  <form action="/submit" method="POST">
+    <h1>Late Entry Form</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="roll">Roll Number:</label>
+    <input type="text" id="roll" name="roll" required>
+
+    <label for="device">Device:</label>
+    <select id="device" name="device" required>
+      <option value="">Select device...</option>
+      <option>Phone - MacOS</option>
+      <option>Phone - Android</option>
+      <option>Laptop - MacOS</option>
+      <option>Laptop - Windows</option>
+    </select>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time (with seconds):</label>
+    <input type="time" id="time" name="time" step="1" required>
+
+    <button type="submit">Generate Confirmation</button>
+  </form>
+</body>
+</html>

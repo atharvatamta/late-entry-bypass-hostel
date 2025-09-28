@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Late Entry Recorded</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f5f7fb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .card {
+      background: linear-gradient(30deg, #33d17a 0%, #1fb769 55%, #179f58 100%);
+      color: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+    }
+
+    .info-box, .guard-box {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 12px;
+      margin: 18px 0;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.6;
+      backdrop-filter: blur(2px);
+    }
+
+    .info-box strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .guard-box {
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-style: italic;
+      font-size: 14px;
+      color: #eafff3;
+    }
+
+    footer {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 13px;
+      color: #333;
+    }
+
+    footer hr {
+      margin: 15px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Late Entry Recorded</h2>
+
+      <div class="info-box">
+        <strong>Entry Time:</strong> {{date}}, {{time}} PM<br>
+        <strong>Device:</strong> {{device}} <br>
+        <strong>Student:</strong> {{name}} ({{roll}})
+      </div>
+
+      <div class="guard-box">
+        FOR SECURITY GUARD <br>
+        This is a valid late entry confirmation. <br>
+        Student has been authorized for entry.
+      </div>
+
+      <p class="note">To make a new entry, scan the QR code again.</p>
+    </div>
+
+    <footer>
+      <hr>
+      <p>THAPAR UNIVERSITY - AUTHORIZED SYSTEM</p>
+      <hr>
+      <p>UNDER SUPERVISION OF ANANTAM HALL MANAGEMENT TEAM</p>
+    </footer>
+  </div>
+</body>
+</html>
